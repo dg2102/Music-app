@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  
+        
+    <div class="head">
+        <img src="logo.png" alt="">
+<h1>Spotify</h1></div>
+    <div class="user">
+        <form action="" class="form">
+            <h2>login</h2>
+             
+            
+            <div class="inputgroup">
+             <input type="text" name="loginUser" id="email" required/>
+             <label for="loginUser" id="first">email</label>
+            </div>
+        
+               
+        
+            <div class="inputgroup">
+                <input type="password" name="loginUser" id="password" required>
+            
+            <label for="loginPassword" id="pass">Password</label>
+            <p>forgot password?</p>
+            </div>
+          <div class="log">
+            <input type="submit" value="Login" class="submit-btn"name="" id="log" onclick="auth()"></div>
+           
+          </form>
+          <h3>Or Sign up using</h3>
+
+          <div class="img">
+           
+            <img src="fb.png" alt="fb">
+            <img src="instagram.png" alt="fb">
+            <img src="twitter.png" alt="fb">
+
+           
+          </div>
+        </div>
+ 
+    
+</body>
+
+</html>
+
+  <script>
+    function auth(){
+      let email=document.getElementById("email").value;
+      let password=document.getElementById("password").value;
+      if(email=="admin@gmail.com" && password=="admin123"){
+        window.location.assign("index.html");
+        alert("login successfully");
+      }
+        else{
+          alert("invalid info")
+            return;
+          
+        }
+      }
+     
+    
+  </script>

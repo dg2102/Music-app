@@ -1,0 +1,367 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300;400&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+  }
+body{
+    height: 100vh;
+    width:100%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+    
+
+}
+
+.content{
+    display: flex;
+}
+.leftSide{
+width:30%;
+height: 100vh;
+background-image: linear-gradient(#9ce3ff 0%,#fd878d 90%);
+
+
+}
+.music-player{
+    width:350px;
+    height: 590px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 0 40px 100px rgba(255,255,255,0.1);
+    margin:auto;
+    position: relative;
+    top:20px;
+    overflow: hidden;
+    color: white;
+}
+
+.music-name,.artist-name{
+    position: relative;
+    top:60px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.music-name{
+    font-size: 40px;
+    font-weight: 590;
+    margin-bottom: 10px;
+}
+.artist-name{
+    font-size: 18px;
+    font-weight: bolder;
+    
+}
+.disk{
+    position: relative;
+display: block;
+margin: 80px auto;
+top:20px;
+width:180px;
+height:180px;
+border-radius: 50%;
+background-color: black;
+background-image: url("shape.jpg");
+background-size: cover;
+box-shadow: 0 0 0 10px rgba(255,255,255,0.08);
+animation: rotate 10s linear infinite;
+animation-play-state: paused;
+
+}
+.disk.play{
+    animation-play-state: running;
+}
+.disk::before{
+    content: '';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+/* .song-slider{
+    width:100%;
+    position: relative;
+    left:15px;
+    top:10px;
+}
+.seek-bar{
+    -webkit-appearance: none;
+    width:90%;
+    height:5px;
+    border-radius: 10px;
+    background: #7fc8a9;
+    cursor: pointer;
+}
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width:10px;
+    height:10px;
+    background-color: #000000;
+}
+.current-time,.song-duration{
+    font-size: 14px;
+}
+.song-duration{
+    position: absolute;
+    right: 30px;
+} */
+.controls{
+    width:100%;
+    height:150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px auto ;
+    position: relative;
+    left:28px;
+    bottom: 15px;
+  
+
+  
+}
+.controls i,.controls p{
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease;
+   
+}
+.controls i:hover{
+transform: translateY(-3px);
+}
+.play-btn{
+    position: relative;
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+.play-btn span{
+    position: absolute;
+    top:50%;
+    left:27%;
+    transform: translateY(-50%);
+    width:10px;
+    height: 30px;
+    border-radius: 2px;
+    background: #5f7a61;
+    transition: .5s;
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
+
+}
+.play-btn span:nth-child(2){
+    left:55%;
+    transform-origin: center;
+
+}
+.play-btn .pause span:nth-child(2){
+    transform: translateY(-50%)scaleY(0);
+}
+.play-btn span:nth-child(1){
+    width:35%;
+    left:53%;
+    transform: translate(-50%,-50%);
+    border-radius: 0;
+    clip-path: polygon(0 0,100% 50%, 100% 50%,0% 100%);
+}
+.play-btn .pause{
+    animation: pulse 2s linear infinite;
+
+}
+@keyframes pulse{
+    0%{
+box-shadow: 0;
+    }
+    50%{
+box-shadow: 0 0 0 5px rgba(255,255,255,0.1);
+    }
+    100%{box-shadow: 0 0 0 5px rgba(255,255,255,0.4);
+
+    }
+}
+.btn{
+    width:40px;
+    height:40px;
+    background:#d5eebb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:none;
+    cursor: pointer;
+}
+
+@keyframes rotate{
+    0%{
+   transform: rotate(0);
+    }
+   
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.rightSide{
+    width:70%;
+    height: 100vh;
+    background-color: #0B1320;
+    color:white;
+    
+    }
+
+
+
+    .spotify-playlists {
+      
+        position: relative;
+        top:15px;
+       left:20px;
+         
+       
+       
+      }
+      .spotify-playlists h2 {
+        color: #ffffff;
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      .spotify-playlists .list {
+        display: flex;
+        gap: 42px;
+        overflow: hidden;
+      }
+      .spotify-playlists .list .item {
+        min-width: 140px;
+        width: 160px;
+        padding: 15px;
+        background-color: #181818;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all ease 0.4s;
+      }
+      .spotify-playlists .list .item:hover {
+        background-color: #252525;
+      }
+      .spotify-playlists .list .item img {
+        width: 100%;
+        height:170px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+      }
+      .spotify-playlists .list .item .play {
+        position: relative;
+      }
+      .spotify-playlists .list .item .play .fa {
+        position: absolute;
+        right: 10px;
+        top: -60px;
+        padding: 18px;
+        background-color: #1db954;
+        border-radius: 100%;
+        opacity: 1;
+        transition: all ease 0.4s;
+      }
+      .spotify-playlists .list .item:hover .play .fa {
+        opacity: 1;
+        transform: translateY(-20px);
+      }
+      .spotify-playlists .list .item h4 {
+        color: #ffffff;
+        font-size: 14px;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .spotify-playlists .list .item p {
+        color: #989898;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 600;
+      }
+      .spotify-playlists hr {
+        margin: 70px 0px 0px;
+        border-color: #636363;
+      }
+      
+      .preview {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to right, #ae2896, #509bf5);
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .preview h6 {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+      .preview p {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .preview button {
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 14px 30px;
+        border: 0px;
+        border-radius: 40px;
+        cursor: pointer;
+      }
+      .heading{
+        margin-top: 25px;
+        margin-left: 22px;
+      }
+      .artist{
+        display: flex;
+       margin-right: 10px;
+       margin-top: 15px;
+      }
+      .artist img{
+        margin-left: 30px;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        
+      }
+      .audio{
+       position: relative;
+       top:-10px;
+       left:25px;
+
+      }
+      .logout{
+        background: linear-gradient(to right, #2833ae, #3379cf);
+        color: white;
+        height:30px;
+        width:80px;
+        position: relative;
+        left:850px;
+        top:15px;
+        border: none;
+        border-radius: 10px;
+        text-transform: capitalize;
+        font-size: 16px;
+        cursor: pointer;
+
+      }
+      
+      .logout:hover{
+        transform: translateZ(-20px);
+      }

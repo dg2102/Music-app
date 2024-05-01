@@ -1,0 +1,235 @@
+header  .menu_side,.song_side{
+    width:25%;
+    height:90%;
+    /* border:1px solid white; */
+    background: #111727;
+    position: relative;
+    bottom: 200px;
+
+    
+
+  }
+  
+  header .song_side{
+    width:850px;
+    background: #0B1320;
+  }
+  header .masterplay{
+   
+    height:10%;
+    width:1000px;
+    background-color: #111727;
+    position: relative;
+    bottom: 230px;
+  }
+  header .menu_side h1{
+    font-size: 20px;
+    color:white;
+    margin:15px 0 0 20px;
+    font-weight: 500;
+  }
+  header .playlist{
+    margin-left: 15px;
+    
+  }
+  header .menu_side .playlist h4{
+    font-size: 14px;
+    font-weight: 400;
+    
+    padding-bottom: 10px;
+    color:#4c5262;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: .3s linear;
+
+
+}
+header .menu_side .playlist h4:hover{
+   
+    color:#fff;
+   
+
+}
+header .menu_side .menu_song{
+    /* border:1px solid white; */
+    height:350px;
+    width:100%;
+   
+    margin-right: 20px;
+    margin-top: 20px;
+}
+header .menu_side .menu_song li{
+    list-style-type: none;
+    position: relative;
+    padding: 5px 0 5px 10px;
+   cursor: pointer;
+    margin-bottom: 10px;
+ transition: .3s linear;
+ display: flex;
+ align-items: center;
+
+}
+header .menu_side .menu_song li:hover{
+    background: rgb(105,105,105,.1);
+}
+header .menu_side .menu_song li span{
+    font-size:12px;
+    font-weight: 600;
+    color:#4c5262;
+}
+header .menu_side .menu_song li img{
+    width:30px;
+    height:32px;
+    margin-left: 25px;
+
+}
+header .menu_side .menu_song li h4{
+font-size: 11px;
+margin-left: 20px;
+width:270px;
+overflow: auto; 
+text-overflow:ellipsis;
+/* white-space: nowrap;
+
+}
+header .menu_side .menu_song li h5 .subtitle{
+    font-size: 10px;
+    color: #4c5262;
+
+    
+}
+ .btn{
+   
+    /* color: #4c5262; */
+    position: absolute;
+    right:10px;
+    
+}
+header .masterplay{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+   border: 1px solid red;
+   
+  
+  
+    
+}
+header .masterplay .wave{
+    width:30px;
+    height:30px;
+    border:1px solid white;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10px;
+   
+}
+header .masterplay .wave .wave1{
+    width:3px;
+    height: 10px;
+    background:#36e2ec;
+    margin-right: 3px;
+    border-radius: 10px;
+    animation: wave .5s linear infinite;
+}
+header .masterplay .wave .wave1:nth-child(2){
+    height:13px;
+    margin-right: 3.7px;
+    animation-delay: .4s;
+}
+header .masterplay .wave .wave1:nth-child(3){
+height:8px;
+animation-delay: .8s;
+}
+header .masterplay .icon{
+  font-size: 22px;
+  margin:0 40px 0 40px;
+  display: flex; 
+  align-items: center; 
+ position: relative;
+ left:400px;
+  cursor: pointer;
+  outline: none;
+}
+header .masterplay .icon i{
+  margin-left: 30px;
+}
+@keyframes wave{
+    0%{height :10px;
+
+    }
+    50%{height :15px;}
+    100%{height :10px;}
+    }
+header .masterplay h5{
+    width:130px;
+    border: 1px solid white;
+    margin-left: 15px;
+    color:white;
+    height:30px;
+    text-transform: hidden;
+    overflow: hidden;
+    font-size: 13px;
+}
+header .masterplay .icon .bi:nth-child(2){
+  border: 1px solid white;
+
+}
+.vol{
+ 
+  position: relative;
+  right:-620px;
+  top:-20px;
+  margin-bottom: 10px;
+}
+#start{
+  width:32px;
+ 
+  font-size: 13px;
+  font-weight: 400;
+}
+#seek{
+  position: relative;
+  width:100%;
+  height: 2px;
+  background-color: rgb(105,105,170,.1);
+  margin:0 15px 0 10px;
+
+}
+ header .masterplay .bar .bar2{
+  position: relative;
+  background: #36e2ec;
+  width:500px;
+ height:6px;
+  top:8px;
+  left:10px;
+  transition:1s linear;
+ 
+  
+}
+
+header .masterplay .bar input{
+  position: absolute;
+  width:400px;
+  top:18px;
+  z-index: 999;
+  opacity: 1;
+}
+.vol i{
+  position: relative;
+  left:130px;
+  top:580px;
+  z-index: 999;
+
+}
+/* .vol input{
+  width:100%;
+  position: relative;
+  top:-23px;
+  cursor: pointer;
+ left:25px;
+ z-index: 999;
+ opacity: 0;
+} */

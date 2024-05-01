@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+   
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+    <div class="content">
+    <div class="leftSide">
+        <audio src="" id="audio"></audio>
+        <div class="music-player">
+            <h1 class="music-name">Shape Of You</h1>
+            <p class="artist-name">Ed sheren</p>
+            <div class="disk play"></div>
+            <div class="song-slider">
+                <!-- <input type="range" value="0"class="seek-bar"> -->
+                <!-- <span class="current-time">00:00</span>
+                <span class="song-duration">00:00</span> -->
+            </div>
+            <audio  class="audio"src="Music/SHAPE OF YOU.mp3"type="audio" controls></audio>
+            <div class="controls">
+              <i class="fa-solid second fa-heart"id ="second" onclick="toggle()"></i>
+             
+              
+              
+               
+                <i class="fa-solid fa-backward-step"id="backward"></i>
+                <i class="fa-solid fa-play" id="play"></i>
+                <i class="fa-solid fa-forward-step"id="forward"></i>
+               
+                <i class="fa-solid fa-shuffle"></i>
+                <!-- <i class="fa-solid fa-circle-down " id="download"></i>
+                    -->
+                         
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="rightSide">
+      <button class= "logout"onclick="logout()">logout</button>
+        <div class="spotify-playlists">
+            <h2>Spotify Playlists</h2>
+    
+            <div class="list">
+              <div class="item">
+                <img src="ari.jpeg" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Today's Top Hits</h4>
+                <p>Rema & Selena Gomez are on top of the...</p>
+              </div>
+    
+              <div class="item">
+                <img src="Medi.jpeg" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Focus-Meditation</h4>
+                <p>New Music from Lil Baby, Juice WRLD an...</p>
+              </div>
+    
+              <div class="item">
+                <img src="Nature.jpeg" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Nature/Relaxing</h4>
+                <p>The biggest spmgs pf tje 2010s. Cover:...</p>
+              </div>
+    
+              <div class="item">
+                <img src="Workout.jpeg" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Rock Classics-Workout</h4>
+                <p>Rock Legends & epic songs that continue t...</p>
+              </div>
+             </div>
+
+
+    </div>
+    <h2 class="heading">Top Artist of this Month</h2>
+    <div class="artist">
+       
+        <img src="Snake.jpeg" alt="">
+        <img src="Arijit.jpeg" alt="">
+        <img src="Sel.jpeg" alt="">
+        <img src="Pritam.jpeg" alt="">
+        <img src="dua.jpeg" alt="">
+        
+      </div>
+</div>
+
+   <!-- <script src="app.js"></script> -->
+   
+   <script src="app.js">
+    
+      
+   </script>
+</body>
+</html>
